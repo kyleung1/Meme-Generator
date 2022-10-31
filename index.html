@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--
+  ***
+  Name: Kyle Leung
+  Date: 10/19/2022
+  Section: CSE 154 AB Donovan Kong
+
+  This is the index.html page for my Creative Project 2 meme generating website.
+  It has HTML that contains the structure for the meme generator such as the inputs,
+  buttons, and clickable sections. There are options whether to use a meme template
+  or enter the url for the user's own image url.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>getmemedon</title>
+  </head>
+  <body>
+    <header>
+      <h1>GETMEMEDON</h1>
+    </header>
+    <section id="first">
+      <p id="choose-template">Choose Template</p>
+      <p id="own-image">Create Your Own</p>
+    </section>
+    <section class="hidden" id="template-options">
+      <img src="img/muppet.webp" alt="muppet-on-bike">
+      <!-- Krombopulos137. (2022). R/memeeconomy - who will invest in Motorcycle Muppet?
+      reddit. Retrieved October 19, 2022, from https://www.reddit.com/r/MemeEconomy/
+      comments/xnv4y1/who_will_invest_in_motorcycle_muppet/  -->
+      <img src="img/hair.webp" alt="guy-with-hair">
+      <!-- americasfinest. (2018). R/detroitlions - I have way too much time on my hands.
+      saw the pic of a'shawn robinson and wondered what he would look like if his head
+      was on his chin and his beard was on his head. reddit. Retrieved October 19,
+      2022, from https://www.reddit.com/r/detroitlions/comments/9tw4q6/i_have_way
+      _too_much_time_on_my_hands_saw_the_pic/  -->
+      <img src="img/tate.jpg" alt="andrew-tate">
+      <!-- Ferria, K. (2022, August 19). History of logos: Andrew Tate and Hustlers
+      University's logo. Hatchwise. Retrieved October 19, 2022, from
+      https://www.hatchwise.com/resources/history-of-logos-andrew-tate-and-hustlers
+      -universitys-logo  -->
+      <img src="img/astronaut.png" alt="astronaut">
+      <!-- Always has been meme template. Imgflip. (2020). Retrieved October 19,
+      2022, from https://imgflip.com/memetemplate/Always-Has-Been  -->
+    </section>
+    <section class="input">
+      <article id="own-options" class="hidden">
+        <label for="img-url">Image Link</label>
+        <input type="text" id="img-url" placeholder="Enter Img URL">
+        <button id="image-button">Use This Image</button>
+      </article>
+      <label for="joke1">Top Text</label>
+      <input type="text" id="joke1" placeholder="Type Your Meme">
+      <label for="joke2">Bottom Text</label>
+      <input type="text" id="joke2" placeholder="Optional">
+      <button id="gen">Generate</button>
+      <button id="clear">Clear All</button>
+    </section>
+    <section id="meme-window"></section>
+    <footer><p>Made by Kyle Leung for CSE 154 AU22</p></footer>
+  </body>
+</html>
